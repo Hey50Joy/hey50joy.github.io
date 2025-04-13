@@ -1,7 +1,6 @@
 // script.js
 
 console.log("JS is running");
-displayProjects();
 
 const projects = [
     {
@@ -61,3 +60,7 @@ function displayProjects() {
         container.appendChild(details);
 });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+displayProjects();
+});
