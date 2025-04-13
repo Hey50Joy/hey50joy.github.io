@@ -1,25 +1,61 @@
-/* Reset & base styles */
-* {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* New base font for the body */
 body {
-    font-family: 'Georgia', serif;
-    background-color: #fefaf6;
+    font-family: 'Poppins', sans-serif;
+    backgroun-color: #fefaf6;
     color: #3e3e3e;
     line-height: 1.6;
     padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Headers */
-h1, h2, h3 {
-    color: #a9586a;
-    font-family: 'Playfair Display', serif;
+/* Navigation */
+nav {
+    background-color: #8c9165;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-/* Links */
+nav a {
+    color: #fefaf6;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #f7d6cf;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f7d6cf;
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    color: #3e3e3e;
+}
+
+.hero h2, h3 {
+    font-family: 'Danicng Script', cursive;
+    font-size: 2rem;
+    color: #3e3e3e;
+}
+
+/* Section spacing */
+section {
+    margin-bottom: 3rem;
+}
+
+/* Project Links */
 a {
     color: #caa37b;
     text-decoration: none;
@@ -28,4 +64,54 @@ a {
 a:hover {
     color: #b497bd;
     text-decoration: underline;
+}
+
+/* Call to Action */
+footer.cta {
+    background-color: #d08c9f;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    animation:fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer.cta h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+footer.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+footer.cta a.button {
+    background-color: #a9586a;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+footer.cta a.button:hover {
+    background-color: #8a3e52;
 }
