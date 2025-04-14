@@ -1,12 +1,37 @@
 /* New base font for the body */
 body {
     font-family: 'Poppins', sans-serif;
-    backgroun-color: #fefaf6;
+    background-color: #faf3eb;
     color: #3e3e3e;
     line-height: 1.6;
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.hero
+footer.cta,
+nav {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 3rem 2rem;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1600px) {
+    .hero h1 {
+        font-size: 6rem;
+    }
+
+    .hero p {
+        font-size: 1.6rem;
+    }
 }
 
 /* Navigation */
@@ -54,14 +79,33 @@ nav li {
 
 .hero h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
-    color: #3e3e3e;
+    font-size: 4rem;
+    color: #faf3eb;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: clamp(3rem, 6vw, 5rem);
 }
 
 .hero h2, h3 {
-    font-family: 'Danicng Script', cursive;
-    font-size: 2rem;
-    color: #3e3e3e;
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #a95869;
+    margin-top: 2.5rem;
+    border-bottom: 2px dashed #caa3a3;
+    padding-bottom: 0.5px;
+}
+
+.hero p {
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    color: #4a4747;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+    font-weight:400;
+    opacity: 0.9;
+    margin-top: 1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Section spacing */
@@ -71,7 +115,7 @@ section {
 
 /* Project Links */
 a {
-    color: #caa37b;
+    color: #a95869;
     text-decoration: none;
 }
 
@@ -86,7 +130,7 @@ footer.cta {
     padding: 3rem;
     text-align: center;
     border-radius: 10px;
-    color: #fff;
+    color: #faf3eb;
     animation:fadeInUp 1s ease-out;
 }
 
@@ -105,17 +149,18 @@ footer.cta h2 {
     font-family: 'Dancing Script', cursive;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #fff;
+    color: #faf3eb;
 }
 
 footer.cta p {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+    color: #faf3eb;
 }
 
 footer.cta a.button {
     background-color: #a9586a;
-    color: #fff;
+    color: #faf3eb;
     padding: 0.75rem 1.5rem;
     font-size: 1.1rem;
     border: none;
