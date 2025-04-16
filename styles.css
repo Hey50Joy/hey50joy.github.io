@@ -9,6 +9,12 @@ body {
     margin: 0 auto;
 }
 
+.full-width-section {
+    width: 100%;
+    background: #eee;
+    border-bottom: 1px dashed #d2c2c2;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -173,4 +179,4 @@ footer.cta a.button {
 
 footer.cta a.button:hover {
     background-color: #8a3e52;
-}
+} 
