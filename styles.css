@@ -141,7 +141,7 @@ footer.cta {
 /* === Decorative Images & Personal Photo === */
 .joy-image {
     position: absolute;
-    top: 120px;
+    top: 200px;
     right: 120px;
     width: 300px;
     height: auto;
@@ -153,7 +153,7 @@ footer.cta {
 
 .corner-flower {
     position: absolute;
-    width: 300px;
+    width: 1000px;
     height: auto;
     z-index: 10;
     pointer-events: none;
