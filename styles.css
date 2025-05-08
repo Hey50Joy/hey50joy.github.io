@@ -77,7 +77,8 @@ nav li {
     padding: 3rem;
     text-align: center;
     margin-bottom: 2rem;
-    border-radius: 10px;
+    border-radius: 5px;
+    position: relative
 }
 
 .hero h1 {
@@ -135,6 +136,43 @@ footer.cta {
     border-radius: 10px;
     color: #faf3eb;
     animation:fadeInUp 1s ease-out;
+}
+
+/* === Decorative Images & Personal Photo === */
+.joy-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #faf3eb;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.corner-flower {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 600px) {
+    .corner-flower {
+        display: none;
+    }
 }
 
 @keyframes fadeInUp {
